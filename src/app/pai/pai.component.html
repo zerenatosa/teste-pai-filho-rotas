@@ -1,0 +1,16 @@
+<p>Olá, sou o componente PAI</p>
+<p>Vou passar para o componente filho a seguinte mensagem:  {{dadoParaFilho}}  </p>
+
+<p> Este link vai para página externa, que exibirá o dado inserido no campo abaixo (insira e envie o dado antes de abrir a página) <a routerLink="pagina-externa"> link </a></p>
+
+<div class="form-field">
+  <label class="form-field_label" for="nomeDaNota">Informe aqui o dado que vai ser enviado para outra página</label>
+  <input class="form-field_input" id="nomeDaNota" type="text"/>
+</div>
+<button class="btn waves-effect waves-light blue-grey lighten-1" type="submit" name="action">gravar
+</button>
+
+
+
+
+<app-filho [dadoRecebidoPai]="dadoParaFilho"></app-filho>
