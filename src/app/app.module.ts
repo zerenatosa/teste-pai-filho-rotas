@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PaiComponent } from './pai/pai.component';
 import { FilhoComponent } from './filho/filho.component';
 import { PaginaExternaComponent } from './pagina-externa/pagina-externa.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PaginaExternaComponent } from './pagina-externa/pagina-externa.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

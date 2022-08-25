@@ -1,2 +1,11 @@
-<p>Olá, sou o componete filho.</p>
-<p> Recebi de meu pai a seguinte mensagem: {{dadoRecebidoPai}}</p>
+<p>Olá, sou o componente filho.</p>
+
+<div *ngIf="dadoRecebidoPai">
+<p> Recebi de meu pai a seguinte mensagem enviada via @Input  :  {{dadoRecebidoPai}}</p>
+</div>
+
+<br/>
+
+<div *ngIf="dadoRecebidoPaiViaRota">
+<p> Recebi de meu pai a seguinte mensagem enviada via rotas  :   {{dadoRecebidoPaiViaRota}}</p>
+</div>
